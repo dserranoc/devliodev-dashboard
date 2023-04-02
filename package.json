@@ -21,6 +21,7 @@
     "typescript": "5.0.3"
   },
   "devDependencies": {
-    "@s-ui/mono": "^2.34.0"
+    "@s-ui/mono": "^2.34.0",
+    "ts-standard": "^12.0.2"
   }
 }
