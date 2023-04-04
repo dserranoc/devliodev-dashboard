@@ -1,14 +1,9 @@
 import { FaGithub } from 'react-icons/fa'
-import supabase from '../../utils/supabase'
+import { loginWithGithub } from '../../utils/supabase'
 
 const githubClickHandler = async () => {
   try {
-    await supabase.auth.signInWithOAuth({
-      provider: 'github',
-      options: {
-        redirectTo: 'http://localhost:3000'
-      }
-    })
+    await loginWithGithub()
   } catch (error) {
     console.error(error)
   }
