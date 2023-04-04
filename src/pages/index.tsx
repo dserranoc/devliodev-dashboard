@@ -1,8 +1,7 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
-import Navbar from '@/components/Landing/Navbar'
-import Hero from '@/components/Landing/Hero'
-import Footer from '@/components/Landing/Footer'
+import Hero from '@/components/Hero'
+import Layout from '@/components/Layouts/Layout'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,11 +14,9 @@ export default function Home () {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <main className='flex flex-col h-screen'>
-        <Navbar />
+      <Layout>
         <Hero />
-        <Footer />
-      </main>
+      </Layout>
     </>
   )
 }
