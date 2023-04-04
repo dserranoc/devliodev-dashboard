@@ -2,8 +2,11 @@ import ChangeTheme from '@/components/ChangeTheme'
 import Logo from '@/components/Logo'
 import Link from 'next/link'
 import GithubAuthButton from '../GithubAuthButton'
+import { useSession } from '@supabase/auth-helpers-react'
+import LogoutButton from '../LogoutButton'
 
 export default function Navbar () {
+  const session = useSession()
   return (
     <nav className='bg-white border-gray-200 dark:bg-gray-900'>
       <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
@@ -13,7 +16,7 @@ export default function Navbar () {
         </Link>
         <div className='flex gap-5'>
           <ChangeTheme />
-          <GithubAuthButton />
+          {session === null ? <GithubAuthButton /> : <LogoutButton />}
         </div>
       </div>
     </nav>
