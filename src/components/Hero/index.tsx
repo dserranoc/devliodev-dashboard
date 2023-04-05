@@ -12,7 +12,7 @@ export default function Hero () {
             filter: 'blur(100px)'
           }}
         />
-        <h1 className='mb-4 text-5xl font-extrabold tracking-tight leading-none text-gray-900 md:text-6xl lg:text-7xl dark:text-white px-10 md:px-20'>Es el momento de dar visibilidad a tu <span className='z-20 bg-gradient-to-r from-devlio-purple-500 via-devlio-purple-600 to-devlio-purple-700 00 inline-block text-transparent bg-clip-text'>software</span></h1>
+        <h1 className='mb-4 text-5xl font-extrabold tracking-tight leading-none text-gray-900 md:text-6xl lg:text-7xl dark:text-white px-10 md:px-20'>Es el momento de dar visibilidad a tu <span className='z-20 bg-gradient-to-r from-devlio-purple-400 via-devlio-purple-500 to-devlio-purple-600 inline-block text-transparent bg-clip-text'>software</span></h1>
         <p className='mb-8 text-xl font-normal text-gray-500 lg:text-2xl sm:px-16 lg:px-48 dark:text-gray-400'>devlio.dev es una plataforma donde puedes mostrar al mundo los proyectos software que hayas realizado.</p>
         <div className='flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4'>
           {session === null ? <GithubAuthButton displayStyle='block sm:hidden' /> : <Link href='/dashboard' className='inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg border border-gray-300 bg-devlio-purple-500 hover:bg-devlio-purple-600 focus:ring-4 focus:ring-devlio-purple-100 dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800'>Acceder a la app</Link>}
