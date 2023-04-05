@@ -6,7 +6,7 @@ export default function GithubAuthButton ({ displayStyle = 'hidden sm:inline-fle
 
   const githubClickHandler = async () => {
     try {
-      await supabaseClient.auth.signInWithOAuth({ provider: 'github', options: { redirectTo: 'http://localhost:3000/dashboard' } })
+      await supabaseClient.auth.signInWithOAuth({ provider: 'github', options: { redirectTo: 'http://localhost:3000/publications' } })
     } catch (error) {
       console.error(error)
     }
