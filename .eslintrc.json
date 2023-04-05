@@ -15,6 +15,7 @@
           "attributes": false
         }
       }
-    ]
+    ],
+    "@next/next/no-img-element": "off"
   }
 }
